@@ -1,0 +1,77 @@
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="navbar"></div>
+    <div class="container">
+        <ul class="list-group">
+            <li class="list-group-item">
+                <div class="d-flex justify-content-between align-items-center">
+                    <a href="/fuenteEnlaces/CalcularElevado.py" class="btn btn-primary" download="Calcular_elevado.py">
+                        Calcular un número elevado a n
+                    </a>
+                    <div class="d-flex">
+                        <span class="small">Archivo Python</span>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="d-flex justify-content-between align-items-center">
+                    <a href="/fuenteEnlaces/clicker.py" class="btn btn-primary" download="Clicker.py">Un clicker</a>
+                    <div class="d-flex">
+                        <span class="small">Archivo Python</span>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="d-flex justify-content-between align-items-center">
+                    <a href="/fuenteEnlaces/Diablo Randompy.py" class="btn btn-primary" download="Diablo_Random.py">Un
+                        selector aleatorio de clases para el Diablo II</a>
+                    <div class="d-flex">
+                        <span class="small">Archivo Python</span>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="d-flex justify-content-between align-items-center">
+                    <a href="/fuenteEnlaces/Generar_valores_funcion.py" class="btn btn-primary"
+                        download="Grafica.py">Representar una gráfica</a>
+                    <div class="d-flex">
+                        <span class="small">Archivo Python</span>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="d-flex justify-content-between align-items-center">
+                    <a href="/fuenteEnlaces/Traductor.py" class="btn btn-primary" download="Traductor.py">Un traductor,
+                        usando el traductor de google</a>
+                    <div class="d-flex">
+                        <span class="small">Archivo Python</span>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="d-flex justify-content-between align-items-center">
+                    <a href="https://drive.google.com/drive/folders/18OwncZHC-4wq3G04m1aVqEaRSU8JN15X?usp=drive_link"
+                        class="btn btn-primary">ALU en Minecraft</a>
+                    <div class="d-flex">
+                        <span class="small">Carpeta Drive</span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <script>
+        fetch("navbar.html").then(response => response.text()).then(data => {
+            document.getElementById("navbar").innerHTML = data;
+        });
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Mi página personal</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="navbar"></div>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-lg-9" id="contenido">
+                <h1>Iván Macher González</h1>
+                <h2>Graduado en la ETSII 2º de Ingeniería de Informática</h2>
+                <p>
+                    Esta es mi página personal, los enlaces son para diferentes códigos en Python
+                    y un mapa de Minecraft que he hecho para pasar el tiempo
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        fetch("navbar.html").then(response => response.text()).then(data => {
+            document.getElementById("navbar").innerHTML = data;
+        });
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
